@@ -1,11 +1,14 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <sales-report></sales-report>
+  </div>
 </template>
 
 <script>
+import SalesReport from "./components/SalesReport";
 export default {
   name: "App",
-  components: {},
+  components: { SalesReport },
 };
 </script>
 
@@ -16,11 +19,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background: #eee;
 }
 #app {
   width: 100%;
   height: 100%;
-  background-color: red;
+  padding: 20px;
+  box-sizing: border-box;
 }
 </style>
 
